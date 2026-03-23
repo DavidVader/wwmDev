@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            buttonSpielStart = new Button();
+            buttonZeigeHighSocre = new Button();
+            buttonAdmin = new Button();
+            SuspendLayout();
+            // 
+            // buttonSpielStart
+            // 
+            buttonSpielStart.Location = new Point(279, 54);
+            buttonSpielStart.Name = "buttonSpielStart";
+            buttonSpielStart.Size = new Size(234, 92);
+            buttonSpielStart.TabIndex = 0;
+            buttonSpielStart.Text = "Spiel starten";
+            buttonSpielStart.UseVisualStyleBackColor = true;
+            buttonSpielStart.Click += buttonSpielStart_Click;
+            // 
+            // buttonZeigeHighSocre
+            // 
+            buttonZeigeHighSocre.Location = new Point(283, 179);
+            buttonZeigeHighSocre.Name = "buttonZeigeHighSocre";
+            buttonZeigeHighSocre.Size = new Size(234, 92);
+            buttonZeigeHighSocre.TabIndex = 1;
+            buttonZeigeHighSocre.Text = "Highscore";
+            buttonZeigeHighSocre.UseVisualStyleBackColor = true;
+            // 
+            // buttonAdmin
+            // 
+            buttonAdmin.Location = new Point(283, 312);
+            buttonAdmin.Name = "buttonAdmin";
+            buttonAdmin.Size = new Size(234, 92);
+            buttonAdmin.TabIndex = 2;
+            buttonAdmin.Text = "Administration";
+            buttonAdmin.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonAdmin);
+            Controls.Add(buttonZeigeHighSocre);
+            Controls.Add(buttonSpielStart);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonSpielStart;
+        private Button buttonZeigeHighSocre;
+        private Button buttonAdmin;
     }
 }
