@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace wwmDev
 {
     class SpieleController
     {
         int level=0;
         List<Question> meineQuestions;
-        private System.Windows.Forms.Label labelFrage;
-        private System.Windows.Forms.Button buttonAntwort1;
-        private System.Windows.Forms.Button buttonAntwort2;
-        private System.Windows.Forms.Button buttonAntwort3;
-        private System.Windows.Forms.Button buttonAntwort4;
+        private Label labelFrage;
+        private Button buttonAntwort1, buttonAntwort2, buttonAntwort3, buttonAntwort4;
 
         public SpieleController(object labelFrage, object buttonAntwort1, object buttonAntwort2, object buttonAntwort3, object buttonAntwort4) 
         {
@@ -33,7 +25,7 @@ namespace wwmDev
         public void nextQuestion(int level)
         {
             this.level = level;
-            System.Threading.Thread.Sleep(1000);
+            Thread.Sleep(1000);
             this.labelFrage.Text = meineQuestions[level].frage;
             this.buttonAntwort1.Text = meineQuestions[level].antwort1;
             this.buttonAntwort2.Text = meineQuestions[level].antwort2;
