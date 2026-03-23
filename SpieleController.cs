@@ -15,7 +15,6 @@ namespace wwmDev
             this.buttonAntwort2 = (Button)buttonAntwort2;
             this.buttonAntwort3 = (Button)buttonAntwort3;
             this.buttonAntwort4 = (Button)buttonAntwort4;
-            //this.labelFrage.Text = "Dies ist ein Test";
             QuestionCollector qc1= new QuestionCollector();
             meineQuestions = new List<Question>();
             meineQuestions = qc1.getQuestions();

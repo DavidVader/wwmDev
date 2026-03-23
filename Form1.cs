@@ -14,5 +14,12 @@ namespace wwmDev
             FormSpiel.ShowDialog();
             this.Show();
         }
+
+        private void buttonZeigeHighSocre_Click(object sender, EventArgs e)
+        {
+            DialogScore highscore = new DialogScore();
+            highscore.ShowDialog();
+            this.Show();
+        }
     }
 }

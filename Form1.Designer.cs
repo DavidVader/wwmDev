@@ -35,9 +35,10 @@
             // 
             // buttonSpielStart
             // 
-            buttonSpielStart.Location = new Point(279, 54);
+            buttonSpielStart.Location = new Point(215, 42);
+            buttonSpielStart.Margin = new Padding(2, 2, 2, 2);
             buttonSpielStart.Name = "buttonSpielStart";
-            buttonSpielStart.Size = new Size(234, 92);
+            buttonSpielStart.Size = new Size(180, 72);
             buttonSpielStart.TabIndex = 0;
             buttonSpielStart.Text = "Spiel starten";
             buttonSpielStart.UseVisualStyleBackColor = true;
@@ -45,30 +46,34 @@
             // 
             // buttonZeigeHighSocre
             // 
-            buttonZeigeHighSocre.Location = new Point(283, 179);
+            buttonZeigeHighSocre.Location = new Point(218, 140);
+            buttonZeigeHighSocre.Margin = new Padding(2, 2, 2, 2);
             buttonZeigeHighSocre.Name = "buttonZeigeHighSocre";
-            buttonZeigeHighSocre.Size = new Size(234, 92);
+            buttonZeigeHighSocre.Size = new Size(180, 72);
             buttonZeigeHighSocre.TabIndex = 1;
             buttonZeigeHighSocre.Text = "Highscore";
             buttonZeigeHighSocre.UseVisualStyleBackColor = true;
+            buttonZeigeHighSocre.Click += buttonZeigeHighSocre_Click;
             // 
             // buttonAdmin
             // 
-            buttonAdmin.Location = new Point(283, 312);
+            buttonAdmin.Location = new Point(218, 244);
+            buttonAdmin.Margin = new Padding(2, 2, 2, 2);
             buttonAdmin.Name = "buttonAdmin";
-            buttonAdmin.Size = new Size(234, 92);
+            buttonAdmin.Size = new Size(180, 72);
             buttonAdmin.TabIndex = 2;
             buttonAdmin.Text = "Administration";
             buttonAdmin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(615, 352);
             Controls.Add(buttonAdmin);
             Controls.Add(buttonZeigeHighSocre);
             Controls.Add(buttonSpielStart);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

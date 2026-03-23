@@ -27,6 +27,7 @@ namespace wwmDev
             {
                 this.nName = "unknown";
             }
+            ScoreCollector.CreatePlayer(this.nName);
             nNameDialog.Dispose();
             nNameDialog.Text = nName;
             labelNickName.Text = nName;
@@ -68,6 +69,18 @@ namespace wwmDev
                 {
                     if (level < 3)
                     {
+                        switch (level)
+                        {
+                            case 1:
+                                ScoreCollector.EditScore(this.nName, 200);
+                                break;
+                            case 2:
+                                ScoreCollector.EditScore(this.nName, 1000);
+                                break;
+                            default:
+                                ScoreCollector.EditScore(this.nName, 50);
+                                break;
+                        }
                         level++;
                         buttonAntwort1.BackColor = Color.LightGray;
                         buttonAnwort2.BackColor = Color.LightGray;
@@ -79,6 +92,7 @@ namespace wwmDev
                     {
                         MessageBox.Show("Sie sind Millionär. Der Highscore wird eingetragen", "Spielergebnis", MessageBoxButtons.OK);
                         meinSpiel = null;
+                        ScoreCollector.EditScore(this.nName, 5000);
                         this.Close();
                     }
 
